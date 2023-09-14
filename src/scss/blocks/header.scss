@@ -1,0 +1,166 @@
+.header {
+  padding: 19px 0;
+  background-color: $color-bg-white;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 42px;
+    background-color: $color-bg-main;
+  }
+
+  .interface {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -16px;
+      display: inline-block;
+      width: 2px;
+      height: 32px;
+      border-radius: 1px;
+      background-color: $color-bg-separator;
+    }
+
+    &::before {
+      @media screen and (min-width: $tablet) {
+        content: '';
+        position: absolute;
+        left: -16px;
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background-color: $color-bg-separator;
+      }
+    }
+
+    &__logo {
+      @media screen and (min-width: $tablet) {
+        display: block;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .button--device--tablet {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: $desktop) {
+      position: relative;
+    }
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    @media screen and (min-width: $desktop) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__interface {
+    margin-right: auto;
+
+    @media screen and (min-width: $tablet) {
+      flex-grow: 1;
+      gap: 16px;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+
+  &__menu-icon {
+    background-image: url('../img/icons/burger.svg');
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__callback {
+    @media screen and (min-width: $tablet) {
+      background-image: url('../img/icons/call.svg');
+    }
+  }
+
+  &__chat {
+    @media screen and (min-width: $tablet) {
+      background-image: url('../img/icons/chat.svg');
+    }
+  }
+
+  &__sign-up {
+    @media screen and (min-width: $tablet) {
+      background-image: url('../img/icons/profile.svg');
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__service {
+    background-image: url('../img/icons/service.svg');
+
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      margin-right: 140px;
+    }
+
+    &::before {
+      @media screen and (min-width: $desktop) {
+        position: absolute;
+        left: -133px;
+        color: $color-text-main;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        content: 'Оставить заявку';
+      }
+    }
+  }
+
+  &__check-status {
+    background-image: url('../img/icons/checkstatus.svg');
+
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    &::before {
+      @media screen and (min-width: $desktop) {
+        position: absolute;
+        left: -130px;
+        color: $color-text-main;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        content: 'Статус ремонта';
+      }
+    }
+  }
+}
