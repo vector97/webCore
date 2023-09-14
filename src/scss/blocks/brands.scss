@@ -1,0 +1,10 @@
+.brands {
+  &__list {
+    max-height: 160px;
+  }
+
+  &__item {
+    align-items: center;
+    height: 72px;
+  }
+}

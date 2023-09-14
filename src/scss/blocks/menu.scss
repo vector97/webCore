@@ -1,0 +1,174 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100vh;
+  padding: 18px 16px 32px;
+  background-color: $color-bg-white;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  transition: left 0.3s ease;
+  overflow-y: scroll;
+
+  @media screen and (min-width: $tablet) {
+    padding: 18px 24px 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: static;
+    min-height: 100vh;
+    box-shadow: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .interface {
+    .button:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &__callback {
+      background-image: url('../img/icons/call.svg');
+    }
+
+    &__chat {
+      background-image: url('../img/icons/chat.svg');
+    }
+
+    &__sign-up {
+      background-image: url('../img/icons/profile.svg');
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 46px;
+  }
+
+  &__close-btn {
+    background-image: url('../img/icons/close.svg');
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__search-btn {
+    background-image: url('../img/icons/search.svg');
+  }
+
+  &__list {
+    flex-grow: 1;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    color: $color-text-main;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    &:hover {
+      color: #51587a;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &--active {
+      position: relative;
+      color: $color-text-gray;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -17px;
+        width: 4px;
+        height: 32px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: $color-bg-green;
+
+        @media screen and (min-width: $tablet) {
+          left: -25px;
+        }
+      }
+    }
+  }
+
+  &__interface {
+    margin-bottom: 16px;
+  }
+
+  &__contacts {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 12px;
+    color: $color-text-main;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__phone {
+    color: $color-text-main;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  .langs {
+    display: flex;
+    gap: 7px;
+
+    &__item {
+      color: $color-text-main;
+      font-family: TT Lakes;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+
+      &--active {
+        color: $color-text-gray;
+      }
+    }
+  }
+
+  &--open {
+    left: 0;
+  }
+}

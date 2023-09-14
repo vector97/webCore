@@ -1,0 +1,38 @@
+// fonts
+$main-font: 'TTLakes', sans-serif;
+$font-size: 14px;
+$font-weight: 400;
+
+// colors
+$color-text-main: #1b1c21;
+$color-text-placeholder: #b5b6bc;
+$color-text-accent: #ff3e79;
+$color-text-white: #ffffff;
+$color-text-gray: #7e7e82;
+
+// bg-colors
+$color-bg-main: #f8f8f8;
+$color-bg-btn: #ff3e79;
+$color-bg-white: #ffffff;
+$color-bg-green: #41f6d7;
+$color-bg-separator: #eaeaea;
+
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1366px;
+
+:root {
+  --padding: 0 16px;
+  --margin: 0 0 24px 0;
+
+  @media screen and (min-width: $tablet) {
+    --padding: 0 24px;
+    --margin: 0 0 32px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    --padding: 0 30px;
+    --margin: 0 0 50px 0;
+  }
+}

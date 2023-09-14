@@ -1,17 +1,24 @@
-$bgColor: #24292e;
-$text: #fff;
+// base
+@import './base/fonts.scss';
+@import './base/vars.scss';
+@import './base/common.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+// ui
+@import './ui/button.scss';
+@import './ui/show-more.scss';
+@import './ui/slider-block.scss';
+@import './ui/title.scss';
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+// blocks
+@import './blocks/overlay.scss';
+@import './blocks/page.scss';
+@import './blocks/header.scss';
+@import './blocks/main.scss';
+@import './blocks/menu.scss';
+@import './blocks/navigation.scss';
+@import './blocks/about.scss';
+@import './blocks/brands.scss';
+@import './blocks/technic.scss';
+@import './blocks/price.scss';
+@import './blocks/footer.scss';
+@import './blocks/callback.scss';

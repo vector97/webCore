@@ -1,0 +1,19 @@
+.callback {
+  position: absolute;
+  top: 0;
+  right: -150%;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  width: 320px;
+  height: 100vh;
+  padding: 16px 24px;
+  background-color: $color-bg-white;
+  box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  transition: right 0.3s ease;
+  overflow-y: scroll;
+
+  &--open {
+    right: 0;
+  }
+}
