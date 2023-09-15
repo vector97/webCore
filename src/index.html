@@ -63,7 +63,7 @@
           ></button>
 
           <button
-            class="button interface__chat"
+            class="button interface__feedback"
             type="button"
             aria-label="Открыть чат со специалистом"
           ></button>
@@ -111,13 +111,13 @@
                 />
 
                 <button
-                  class="button button--device--tablet header__callback"
+                  class="button button--device--tablet header__callback interface__callback"
                   type="button"
                   aria-label="Заказать обратный звонок"
                 ></button>
 
                 <button
-                  class="button button--device--tablet header__chat"
+                  class="button button--device--tablet header__feedback interface__feedback"
                   type="button"
                   aria-label="Открыть чат со специалистом"
                 ></button>
@@ -193,6 +193,13 @@
                     Мы являемся авторизованным сервисным центром по ремонту
                     техники Dell. Только у нас вы можете отремонтировать свой
                     ноутбук Dell с официальной гарантией производителя.
+                  </p>
+                  <p class="about__text">
+                    Мы успешно работаем с 1992 года и заслужили репутацию
+                    надежного партнера, что подтверждает большое количество
+                    постоянных клиентов. Мы гордимся тем, что к нам обращаются
+                    по рекомендациям и, в свою очередь, советуют нас родным и
+                    близким.
                   </p>
                   <p class="about__text">
                     Мы успешно работаем с 1992 года и заслужили репутацию
@@ -465,9 +472,9 @@
                         <h3 class="price__name">Срок</h3>
                         <p class="price__description">30 мин</p>
                       </div>
-                      <button class="price__button button" type="button"
-                        >Заказать</button
-                      >
+                      <button class="price__button button" type="button">
+                        Заказать
+                      </button>
                     </div>
                   </li>
 
@@ -487,9 +494,9 @@
                         <h3 class="price__name">Срок</h3>
                         <p class="price__description">30-120 мин</p>
                       </div>
-                      <button class="price__button button" type="button"
-                        >Заказать</button
-                      >
+                      <button class="price__button button" type="button">
+                        Заказать
+                      </button>
                     </div>
                   </li>
 
@@ -511,9 +518,9 @@
                         <h3 class="price__name">Срок</h3>
                         <p class="price__description">30-120 мин</p>
                       </div>
-                      <button class="price__button button" type="button"
-                        >Заказать</button
-                      >
+                      <button class="price__button button" type="button">
+                        Заказать
+                      </button>
                     </div>
                   </li>
 
@@ -535,9 +542,9 @@
                         <h3 class="price__name">Срок</h3>
                         <p class="price__description">30-120 мин</p>
                       </div>
-                      <button class="price__button button" type="button"
-                        >Заказать</button
-                      >
+                      <button class="price__button button" type="button">
+                        Заказать
+                      </button>
                     </div>
                   </li>
 
@@ -559,9 +566,9 @@
                         <h3 class="price__name">Срок</h3>
                         <p class="price__description">30-120 мин</p>
                       </div>
-                      <button class="price__button button" type="button"
-                        >Заказать</button
-                      >
+                      <button class="price__button button" type="button">
+                        Заказать
+                      </button>
                     </div>
                   </li>
                 </ul>
@@ -603,29 +610,99 @@
         <!-- /.footer -->
       </div>
 
-      <div class="callback callback--open">
-        <header class="menu__header">
+      <div class="modal modal--callback">
+        <header class="modal__header">
           <button
-            class="button menu__close-btn"
+            class="button modal__close"
             type="button"
             aria-label="Закрыть окно заказа звонка"
           ></button>
         </header>
-        <!-- /.menu__header -->
+        <!-- /.modal__header -->
 
-        <div class="callback__inner">
-          <p class="callback__title">Заказать звонок</p>
+        <div class="modal__inner">
+          <p class="modal__title">Заказать звонок</p>
 
-          <form class="callback__form">
-            <input class="callback__input" type="tel" name="tel" id="tel" />
+          <form class="modal__form">
+            <input
+              class="modal__input"
+              type="tel"
+              name="tel"
+              id="callback__tel"
+              placeholder="Телефон"
+            />
 
-            <p class="callback__desclaimer">
-              Нажимая “отправить”, вы даете согласие
-              <a href="#">на обработку персональных данных</a> и соглашаетесь с
-              нашей <a href="#">политикой конфиденциальности</a>
+            <p class="modal__desclaimer">
+              Нажимая “отправить”, вы даете согласие на
+              <a class="modal__docs" href="#">
+                обработку персональных данных
+              </a>
+              и соглашаетесь с нашей
+              <a class="modal__docs" href="#"> политикой конфиденциальности </a>
             </p>
 
-            <button class="callback__button button" type="submit">
+            <button class="modal__button button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal modal--feedback">
+        <header class="modal__header">
+          <button
+            class="button modal__close"
+            type="button"
+            aria-label="Закрыть окно обратной связи"
+          ></button>
+        </header>
+        <!-- /.modal__header -->
+
+        <div class="modal__inner">
+          <p class="modal__title">Обратная связь</p>
+
+          <form class="modal__form">
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              id="feedback__name"
+              placeholder="Имя"
+            />
+
+            <input
+              class="modal__input"
+              type="tel"
+              name="tel"
+              id="feedback__id"
+              placeholder="Телефон"
+            />
+
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              id="feedback__email"
+              placeholder="Электронная почта"
+            />
+
+            <textarea
+              class="modal__input"
+              name="massage"
+              id="modal__message"
+              placeholder="Сообщение"
+            ></textarea>
+
+            <p class="modal__desclaimer">
+              Нажимая “отправить”, вы даете согласие на
+              <a class="modal__docs" href="#">
+                обработку персональных данных
+              </a>
+              и соглашаетесь с нашей
+              <a class="modal__docs" href="#"> политикой конфиденциальности </a>
+            </p>
+
+            <button class="modal__button button" type="submit">
               Отправить
             </button>
           </form>

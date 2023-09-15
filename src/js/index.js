@@ -1,12 +1,12 @@
 import '../scss/style.scss'
 import menu from './menu.js'
-import modal from './modal.js'
+import modals from './modals.js'
 import readMore from './readMore.js'
 import showMore from './showMore.js'
 import resizableSwiper from './slider.js'
 
 menu()
-modal()
+modals()
 readMore()
 showMore()
 resizableSwiper('(max-width: 767px)', '.brands__swiper', {

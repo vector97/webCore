@@ -32,6 +32,7 @@
     overflow: hidden;
 
     @media screen and (min-width: $tablet) {
+      max-height: 170px;
       padding-right: 48px;
     }
 
