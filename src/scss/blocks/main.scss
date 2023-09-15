@@ -19,12 +19,6 @@
     line-height: 40px;
     letter-spacing: -0.6px;
 
-    @media screen and (min-width: $tablet) {
-      &::before {
-        left: -24px;
-      }
-    }
-
     &::before {
       content: '';
 
