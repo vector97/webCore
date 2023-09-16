@@ -20,11 +20,11 @@
   &__title {
     margin-bottom: 16px;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       margin-bottom: 24px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include desktop {
       margin: 0 auto 24px;
     }
   }
@@ -32,7 +32,7 @@
   &__container {
     padding: 0;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       padding: var(--padding);
     }
   }
@@ -41,7 +41,7 @@
     box-sizing: border-box;
     padding: 0 16px 40px;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px 24px;
@@ -51,7 +51,7 @@
       transition: max-height 0.3s ease;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include desktop {
       grid-template-columns: repeat(4, 1fr);
       gap: 16px 32px;
       max-width: 1120px;
@@ -68,7 +68,7 @@
     border: 1px solid $color-bg-separator;
     background-color: $color-bg-white;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       width: auto;
     }
   }
@@ -90,7 +90,7 @@
   &__show-more {
     display: none;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       display: flex;
     }
   }

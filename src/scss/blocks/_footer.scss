@@ -9,7 +9,7 @@
     align-items: center;
     gap: 16px;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       align-items: start;
@@ -25,13 +25,13 @@
   }
 
   &__team {
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       text-align: left;
     }
   }
 
   &__desclaimer {
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       text-align: right;
     }
   }

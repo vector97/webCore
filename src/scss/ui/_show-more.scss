@@ -20,7 +20,7 @@
 
   &__block {
     &--open {
-      @media screen and (min-width: $tablet) {
+      @include tablet {
         max-height: 1000px;
       }
     }

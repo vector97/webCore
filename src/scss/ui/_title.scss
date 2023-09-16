@@ -8,12 +8,12 @@
   text-transform: uppercase;
   background: linear-gradient(90deg, $color-bg-main 0%, $color-bg-white 100%);
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     padding-right: 24px;
     padding-left: 24px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     max-width: 1120px;
     padding: 16px 30px;
   }
