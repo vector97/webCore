@@ -2,7 +2,7 @@
   padding: 24px 0;
   background-color: $color-bg-main;
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     margin-top: -80px;
   }
 

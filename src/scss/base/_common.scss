@@ -71,12 +71,12 @@ iframe {
   padding: 0 16px;
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     min-width: $tablet;
     padding: 0 24px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     max-width: 1120px;
     padding: 0 30px;
   }

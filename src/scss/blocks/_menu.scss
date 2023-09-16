@@ -13,11 +13,11 @@
   transition: left 0.3s ease;
   overflow-y: scroll;
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     padding: 18px 24px 32px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     position: static;
     z-index: 0;
     min-height: 100vh;
@@ -34,16 +34,10 @@
       margin-right: 16px;
     }
 
-    &__callback {
-      background-image: url('../img/icons/call.svg');
-    }
-
-    &__feedback {
-      background-image: url('../img/icons/feedback.svg');
-    }
-
-    &__sign-up {
-      background-image: url('../img/icons/profile.svg');
+    @each $icon in 'callback' 'feedback' 'sign-up' {
+      &__#{$icon} {
+        background-image: url('/img/icons/#{$icon}.svg');
+      }
     }
   }
 
@@ -57,7 +51,7 @@
   &__close-btn {
     background-image: url('../img/icons/close.svg');
 
-    @media screen and (min-width: $desktop) {
+    @include desktop {
       display: none;
     }
   }
@@ -91,7 +85,7 @@
     &:not(:last-child) {
       margin-bottom: 24px;
 
-      @media screen and (min-width: $tablet) {
+      @include tablet {
         margin-bottom: 32px;
       }
     }
@@ -111,7 +105,7 @@
         border-bottom-right-radius: 5px;
         background-color: $color-bg-green;
 
-        @media screen and (min-width: $tablet) {
+        @include tablet {
           left: -25px;
         }
       }
@@ -125,7 +119,7 @@
   &__contacts {
     margin-bottom: 8px;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       margin-bottom: 40px;
     }
   }

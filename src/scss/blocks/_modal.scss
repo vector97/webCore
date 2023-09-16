@@ -16,7 +16,7 @@
   transform: translate(150%);
   transition: transform 0.3s ease;
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     width: 440px;
     padding: 40px 32px;
   }
@@ -24,7 +24,7 @@
   &__header {
     margin-bottom: 40px;
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       position: absolute;
       top: 32px;
       left: -62px;
@@ -62,7 +62,7 @@
       border-bottom-right-radius: 5px;
       background-color: $color-bg-green;
 
-      @media screen and (min-width: $tablet) {
+      @include tablet {
         left: -32px;
       }
     }

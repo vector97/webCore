@@ -1,0 +1,157 @@
+.header {
+  padding: 19px 0;
+  background-color: $color-bg-white;
+
+  @include desktop {
+    padding-top: 42px;
+    background-color: $color-bg-main;
+  }
+
+  .interface {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      flex-grow: 1;
+      gap: 16px;
+    }
+
+    @include desktop {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -16px;
+      display: inline-block;
+      width: 2px;
+      height: 32px;
+      border-radius: 1px;
+      background-color: $color-bg-separator;
+    }
+
+    &::before {
+      @include tablet {
+        content: '';
+        position: absolute;
+        left: -16px;
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background-color: $color-bg-separator;
+      }
+    }
+
+    &__logo {
+      @include tablet {
+        display: block;
+        margin-right: auto;
+      }
+    }
+
+    @each $icon in 'callback' 'feedback' 'sign-up' {
+      &__#{$icon} {
+        @include tablet {
+          background-image: url('/img/icons/#{$icon}.svg');
+        }
+      }
+    }
+  }
+
+  .button--device--tablet {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__container {
+    @include desktop {
+      position: relative;
+    }
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    @include desktop {
+      justify-content: flex-end;
+    }
+  }
+
+  &__interface {
+    margin-right: auto;
+
+    @include tablet {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+
+  &__menu-icon {
+    background-image: url('../img/icons/burger.svg');
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__button {
+      @include desktop {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      &::before {
+        @include desktop {
+          position: absolute;
+          left: -130px;
+          color: $color-text-main;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+        }
+      }
+
+      &--service {
+        background-image: url('../img/icons/service.svg');
+
+        @include desktop {
+          margin-right: 140px;
+        }
+
+        &::before {
+          @include desktop {
+            left: -133px;
+            content: 'Оставить заявку';
+          }
+        }
+      }
+
+      &--check-status {
+        background-image: url('../img/icons/checkstatus.svg');
+
+        &::before {
+          @include desktop {
+            left: -130px;
+            content: 'Статус ремонта';
+          }
+        }
+      }
+    }
+  }
+}

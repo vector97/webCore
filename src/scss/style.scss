@@ -1,24 +1,27 @@
+// helpers
+@import './helpers/vars';
+@import './helpers/mixins';
+
 // base
-@import './base/fonts.scss';
-@import './base/vars.scss';
-@import './base/common.scss';
+@import './base/fonts';
+@import './base/common';
 
 // ui
-@import './ui/button.scss';
-@import './ui/show-more.scss';
-@import './ui/slider-block.scss';
-@import './ui/title.scss';
+@import './ui/button';
+@import './ui/show-more';
+@import './ui/slider-block';
+@import './ui/title';
 
 // blocks
-@import './blocks/overlay.scss';
-@import './blocks/page.scss';
-@import './blocks/header.scss';
-@import './blocks/main.scss';
-@import './blocks/menu.scss';
-@import './blocks/navigation.scss';
-@import './blocks/about.scss';
-@import './blocks/brands.scss';
-@import './blocks/technic.scss';
-@import './blocks/price.scss';
-@import './blocks/footer.scss';
-@import './blocks/modal.scss';
+@import './blocks/overlay';
+@import './blocks/page';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/menu';
+@import './blocks/navigation';
+@import './blocks/about';
+@import './blocks/brands';
+@import './blocks/technic';
+@import './blocks/price';
+@import './blocks/footer';
+@import './blocks/modal';
