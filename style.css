@@ -1,25 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'TTLakes';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("TTLakes Regular"), local("TTLakes-Regular"), url(./fonts/TTLakes-Regular.woff) format("woff"); }
-
-@font-face {
-  font-family: 'TTLakes';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local("TTLakes Medium"), local("TTLakes-Medium"), url(./fonts/TTLakes-Medium.woff) format("woff"); }
-
-@font-face {
-  font-family: 'TTLakes';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("TTLakes Bold"), local("TTLakes-Bold"), url(./fonts/TTLakes-Bold.woff) format("woff"); }
-
 :root {
   --padding: 0 16px;
   --margin: 0 0 24px 0; }
@@ -32,6 +11,312 @@
       --padding: 0 30px;
       --margin: 0 0 50px 0; } }
 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
 html {
   position: relative;
   box-sizing: border-box; }
@@ -43,7 +328,6 @@ html {
 
 body {
   min-width: 320px;
-  margin: 0;
   font-family: "TTLakes", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -55,7 +339,6 @@ img {
   height: auto; }
 
 button {
-  font-family: inherit;
   cursor: pointer; }
 
 a {
@@ -79,6 +362,27 @@ fieldset {
 iframe {
   border: none; }
 
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("TTLakes Regular"), local("TTLakes-Regular"), url(./fonts/TTLakes-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("TTLakes Medium"), local("TTLakes-Medium"), url(./fonts/TTLakes-Medium.woff) format("woff"); }
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("TTLakes Bold"), local("TTLakes-Bold"), url(./fonts/TTLakes-Bold.woff) format("woff"); }
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -94,11 +398,11 @@ iframe {
   min-width: 320px;
   padding: 0 16px;
   margin: 0 auto; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .container {
       min-width: 768px;
       padding: 0 24px; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .container {
       max-width: 1120px;
       padding: 0 30px; } }
@@ -133,7 +437,7 @@ iframe {
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.4s ease; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .show-more__block--open {
       max-height: 1000px; } }
   .show-more--open .show-more__icon {
@@ -154,21 +458,21 @@ iframe {
     background-color: #b5b6bc; }
   .slider-block__title {
     margin-bottom: 16px; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .slider-block__title {
         margin-bottom: 24px; } }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .slider-block__title {
         margin: 0 auto 24px; } }
   .slider-block__container {
     padding: 0; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .slider-block__container {
         padding: var(--padding); } }
   .slider-block__list {
     box-sizing: border-box;
     padding: 0 16px 40px; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .slider-block__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -177,7 +481,7 @@ iframe {
         padding: 0;
         overflow: hidden;
         transition: max-height 0.3s ease; } }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .slider-block__list {
         grid-template-columns: repeat(4, 1fr);
         gap: 16px 32px;
@@ -190,7 +494,7 @@ iframe {
     border-radius: 6px;
     border: 1px solid #eaeaea;
     background-color: #ffffff; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .slider-block__item {
         width: auto; } }
   .slider-block__button {
@@ -206,7 +510,7 @@ iframe {
     background-position: 50% 50%; }
   .slider-block__show-more {
     display: none; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .slider-block__show-more {
         display: flex; } }
 
@@ -219,11 +523,11 @@ iframe {
   letter-spacing: -0.2px;
   text-transform: uppercase;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%); }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .title {
       padding-right: 24px;
       padding-left: 24px; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .title {
       max-width: 1120px;
       padding: 16px 30px; } }
@@ -245,7 +549,7 @@ iframe {
   position: relative;
   max-width: 1440px;
   margin: 0 auto; }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .page__wrapper {
       display: flex; } }
 
@@ -255,7 +559,7 @@ iframe {
 .header {
   padding: 19px 0;
   background-color: #ffffff; }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .header {
       padding-top: 42px;
       background-color: #f8f8f8; } }
@@ -263,7 +567,11 @@ iframe {
     position: relative;
     display: flex;
     align-items: center; }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 768px) {
+      .header .interface {
+        flex-grow: 1;
+        gap: 16px; } }
+    @media (min-width: 1366px) {
       .header .interface {
         display: none; } }
     .header .interface::after {
@@ -275,7 +583,7 @@ iframe {
       height: 32px;
       border-radius: 1px;
       background-color: #eaeaea; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .header .interface::before {
         content: '';
         position: absolute;
@@ -285,16 +593,25 @@ iframe {
         height: 32px;
         border-radius: 1px;
         background-color: #eaeaea; } }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .header .interface__logo {
         display: block;
         margin-right: auto; } }
+    @media (min-width: 768px) {
+      .header .interface__callback {
+        background-image: url("/img/icons/callback.svg"); } }
+    @media (min-width: 768px) {
+      .header .interface__feedback {
+        background-image: url("/img/icons/feedback.svg"); } }
+    @media (min-width: 768px) {
+      .header .interface__sign-up {
+        background-image: url("/img/icons/sign-up.svg"); } }
   .header .button--device--tablet {
     display: none; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .header .button--device--tablet {
         display: block; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .header__container {
       position: relative; } }
   .header__menu-wrapper {
@@ -302,77 +619,59 @@ iframe {
     align-items: center;
     -moz-column-gap: 16px;
          column-gap: 16px; }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .header__menu-wrapper {
         justify-content: flex-end; } }
   .header__interface {
     margin-right: auto; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .header__interface {
-        flex-grow: 1;
-        gap: 16px;
         margin-right: 16px;
         margin-left: 16px; } }
   .header__menu-icon {
     background-image: url(./static/burger.svg); }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .header__menu-icon {
         display: none; } }
-  @media screen and (min-width: 768px) {
-    .header__callback {
-      background-image: url(./static/call.svg); } }
-  @media screen and (min-width: 768px) {
-    .header__feedback {
-      background-image: url(./static/feedback.svg); } }
-  @media screen and (min-width: 768px) {
-    .header__sign-up {
-      background-image: url(./static/profile.svg); } }
-  .header__actions {
+  .header .actions {
     display: flex;
     align-items: center;
     gap: 16px; }
-  .header__service {
-    background-image: url(./static/service.svg); }
-    @media screen and (min-width: 1366px) {
-      .header__service {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        margin-right: 140px; } }
-    @media screen and (min-width: 1366px) {
-      .header__service::before {
-        position: absolute;
-        left: -133px;
-        color: #1b1c21;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        content: 'Оставить заявку'; } }
-  .header__check-status {
-    background-image: url(./static/checkstatus.svg); }
-    @media screen and (min-width: 1366px) {
-      .header__check-status {
+    @media (min-width: 1366px) {
+      .header .actions__button {
         position: relative;
         z-index: 1;
         display: flex;
         align-items: center; } }
-    @media screen and (min-width: 1366px) {
-      .header__check-status::before {
+    @media (min-width: 1366px) {
+      .header .actions__button::before {
         position: absolute;
         left: -130px;
         color: #1b1c21;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
-        letter-spacing: -0.2px;
-        content: 'Статус ремонта'; } }
+        letter-spacing: -0.2px; } }
+    .header .actions__button--service {
+      background-image: url(./static/service.svg); }
+      @media (min-width: 1366px) {
+        .header .actions__button--service {
+          margin-right: 140px; } }
+      @media (min-width: 1366px) {
+        .header .actions__button--service::before {
+          left: -133px;
+          content: 'Оставить заявку'; } }
+    .header .actions__button--check-status {
+      background-image: url(./static/checkstatus.svg); }
+      @media (min-width: 1366px) {
+        .header .actions__button--check-status::before {
+          left: -130px;
+          content: 'Статус ремонта'; } }
 
 .main {
   padding: 24px 0;
   background-color: #f8f8f8; }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .main {
       margin-top: -80px; } }
   .main__title {
@@ -409,10 +708,10 @@ iframe {
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
   transition: left 0.3s ease;
   overflow-y: scroll; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .menu {
       padding: 18px 24px 32px; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .menu {
       position: static;
       z-index: 0;
@@ -424,11 +723,11 @@ iframe {
   .menu .interface .button:not(:last-child) {
     margin-right: 16px; }
   .menu .interface__callback {
-    background-image: url(./static/call.svg); }
+    background-image: url("/img/icons/callback.svg"); }
   .menu .interface__feedback {
-    background-image: url(./static/feedback.svg); }
+    background-image: url("/img/icons/feedback.svg"); }
   .menu .interface__sign-up {
-    background-image: url(./static/profile.svg); }
+    background-image: url("/img/icons/sign-up.svg"); }
   .menu__header {
     display: flex;
     align-items: center;
@@ -436,7 +735,7 @@ iframe {
     margin-bottom: 46px; }
   .menu__close-btn {
     background-image: url(./static/close.svg); }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .menu__close-btn {
         display: none; } }
   .menu__logo {
@@ -458,7 +757,7 @@ iframe {
       color: #ff3e79; }
     .menu__item:not(:last-child) {
       margin-bottom: 24px; }
-      @media screen and (min-width: 768px) {
+      @media (min-width: 768px) {
         .menu__item:not(:last-child) {
           margin-bottom: 32px; } }
     .menu__item--active {
@@ -474,14 +773,14 @@ iframe {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         background-color: #41f6d7; }
-        @media screen and (min-width: 768px) {
+        @media (min-width: 768px) {
           .menu__item--active::before {
             left: -25px; } }
   .menu__interface {
     margin-bottom: 16px; }
   .menu__contacts {
     margin-bottom: 8px; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .menu__contacts {
         margin-bottom: 40px; } }
   .menu__mail {
@@ -531,10 +830,10 @@ iframe {
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .navigation {
       padding: 32px 0; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .navigation {
       padding: 8px 0;
       overflow: auto; } }
@@ -543,7 +842,7 @@ iframe {
   .navigation__list {
     display: flex;
     gap: 2px 10px; }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .navigation__list {
         flex-wrap: wrap; } }
   .navigation__item {
@@ -558,7 +857,7 @@ iframe {
     letter-spacing: -0.2px;
     border-radius: 6px;
     transition: background-color 0.3s ease; }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .navigation__link:hover {
         background-color: #b5b6bc; } }
     .navigation__link--active {
@@ -567,20 +866,20 @@ iframe {
 
 .about {
   margin: var(--margin); }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .about {
       position: relative;
       display: flex; } }
   .about__container {
     padding: 0; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .about__container {
         display: flex;
         justify-content: space-between;
         padding: var(--padding); } }
   .about__wrapper {
     padding: var(--padding); }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .about__wrapper {
         width: 50%;
         padding: 0; } }
@@ -589,7 +888,7 @@ iframe {
     margin-bottom: 16px;
     letter-spacing: 0.2px;
     overflow: hidden; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .about__description {
         max-height: 170px;
         padding-right: 48px; } }
@@ -601,12 +900,12 @@ iframe {
     margin-bottom: 16px; }
   .about__bg {
     width: 100%; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .about__bg {
         align-self: flex-start;
         width: 50%;
         border-radius: 5px; } }
-    @media screen and (min-width: 1366px) {
+    @media (min-width: 1366px) {
       .about__bg {
         width: 531px;
         height: 307px;
@@ -621,7 +920,7 @@ iframe {
 
 .technic__list {
   max-height: 200px; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .technic__list {
       max-height: 160px; } }
 
@@ -637,25 +936,25 @@ iframe {
 .technic__button {
   align-self: flex-end; }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .price__list {
     display: flex;
     flex-direction: column;
     gap: 0; } }
 
-@media screen and (min-width: 1366px) {
+@media (min-width: 1366px) {
   .price__list {
     margin-bottom: 32px; } }
 
 .price__header {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__header {
       display: grid;
       grid-template-columns: 5fr 1fr 3fr;
       gap: 25px;
       padding: 16px; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .price__header {
       padding: 16px 24px; } }
 
@@ -677,7 +976,7 @@ iframe {
   border-radius: 6px;
   border: none;
   background-color: #ffffff; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__item {
       position: relative;
       display: grid;
@@ -687,18 +986,18 @@ iframe {
       width: 100%;
       height: auto;
       border-radius: 0; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .price__item {
       padding: 16px 24px; } }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__item:nth-child(2) {
       border-top-left-radius: 6px;
       border-top-right-radius: 6px; } }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__item:last-child {
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px; } }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__item:not(:last-child)::after {
       position: absolute;
       bottom: 0;
@@ -707,7 +1006,7 @@ iframe {
       display: block;
       width: calc(100% - 32px);
       border-bottom: 1px solid #eaeaea; } }
-  @media screen and (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .price__item:not(:last-child)::after {
       left: 24px;
       width: calc(100% - 48px); } }
@@ -716,7 +1015,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__part:last-child {
       align-items: center; } }
 
@@ -727,7 +1026,7 @@ iframe {
   font-weight: 500;
   line-height: 16px;
   opacity: 0.7218; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__name {
       display: none; } }
 
@@ -753,7 +1052,7 @@ iframe {
   margin-bottom: 16px;
   padding: var(--padding);
   letter-spacing: 0.2px; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .price__disclaimer {
       max-width: 481px; } }
 
@@ -787,7 +1086,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 16px; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .footer__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -798,10 +1097,10 @@ iframe {
     line-height: 16px;
     text-align: center;
     opacity: 0.7218; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .footer__team {
       text-align: left; } }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .footer__desclaimer {
       text-align: right; } }
 
@@ -819,13 +1118,13 @@ iframe {
   box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.2);
   transform: translate(150%);
   transition: transform 0.3s ease; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .modal {
       width: 440px;
       padding: 40px 32px; } }
   .modal__header {
     margin-bottom: 40px; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .modal__header {
         position: absolute;
         top: 32px;
@@ -851,7 +1150,7 @@ iframe {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       background-color: #41f6d7; }
-      @media screen and (min-width: 768px) {
+      @media (min-width: 768px) {
         .modal__title::before {
           left: -32px; } }
   .modal__input {
