@@ -1,27 +1,36 @@
-// helpers
-@import './helpers/vars';
-@import './helpers/mixins';
+// abstracts
+@import
+  'abstracts/vars',
+  'abstracts/mixins';
+
+// vendors
+@import
+  'vendors/normalize';
 
 // base
-@import './base/fonts';
-@import './base/common';
+@import
+  'base/common',
+  'base/fonts',
+  'base/helpers';
 
-// ui
-@import './ui/button';
-@import './ui/show-more';
-@import './ui/slider-block';
-@import './ui/title';
+// components
+@import
+  'components/button',
+  'components/show-more',
+  'components/slider-block',
+  'components/title';
 
-// blocks
-@import './blocks/overlay';
-@import './blocks/page';
-@import './blocks/header';
-@import './blocks/main';
-@import './blocks/menu';
-@import './blocks/navigation';
-@import './blocks/about';
-@import './blocks/brands';
-@import './blocks/technic';
-@import './blocks/price';
-@import './blocks/footer';
-@import './blocks/modal';
+// layout
+@import
+  'layout/overlay',
+  'layout/page',
+  'layout/header',
+  'layout/main',
+  'layout/menu',
+  'layout/navigation',
+  'layout/about',
+  'layout/brands',
+  'layout/technic',
+  'layout/price',
+  'layout/footer',
+  'layout/modal';
