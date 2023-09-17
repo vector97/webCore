@@ -723,11 +723,11 @@ iframe {
   .menu .interface .button:not(:last-child) {
     margin-right: 16px; }
   .menu .interface__callback {
-    background-image: url("/img/icons/callback.svg"); }
+    background-image: url(./static/callback.svg); }
   .menu .interface__feedback {
-    background-image: url("/img/icons/feedback.svg"); }
+    background-image: url(./static/feedback.svg); }
   .menu .interface__sign-up {
-    background-image: url("/img/icons/sign-up.svg"); }
+    background-image: url(./static/sign-up.svg); }
   .menu__header {
     display: flex;
     align-items: center;
