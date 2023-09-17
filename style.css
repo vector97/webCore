@@ -599,13 +599,13 @@ iframe {
         margin-right: auto; } }
     @media (min-width: 768px) {
       .header .interface__callback {
-        background-image: url("/img/icons/callback.svg"); } }
+        background-image: url(./static/callback.svg); } }
     @media (min-width: 768px) {
       .header .interface__feedback {
-        background-image: url("/img/icons/feedback.svg"); } }
+        background-image: url(./static/feedback.svg); } }
     @media (min-width: 768px) {
       .header .interface__sign-up {
-        background-image: url("/img/icons/sign-up.svg"); } }
+        background-image: url(./static/sign-up.svg); } }
   .header .button--device--tablet {
     display: none; }
     @media (min-width: 768px) {
