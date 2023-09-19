@@ -55,7 +55,7 @@
     @each $icon in 'callback' 'feedback' 'sign-up' {
       &__#{$icon} {
         @include tablet {
-          background-image: url('/img/icons/#{$icon}.svg');
+          background-image: url('../img/icons/#{$icon}.svg');
         }
       }
     }
