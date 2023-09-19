@@ -1,36 +1,6 @@
-// abstracts
 @import
-  'abstracts/vars',
-  'abstracts/mixins';
-
-// vendors
-@import
-  'vendors/normalize';
-
-// base
-@import
-  'base/common',
-  'base/fonts',
-  'base/helpers';
-
-// components
-@import
-  'components/button',
-  'components/show-more',
-  'components/slider-block',
-  'components/title';
-
-// layout
-@import
-  'layout/overlay',
-  'layout/page',
-  'layout/header',
-  'layout/main',
-  'layout/menu',
-  'layout/navigation',
-  'layout/about',
-  'layout/brands',
-  'layout/technic',
-  'layout/price',
-  'layout/footer',
-  'layout/modal';
+  'abstracts/index',
+  'vendors/index',
+  'base/index',
+  'components/index',
+  'layout/index';
