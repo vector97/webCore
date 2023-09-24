@@ -41,6 +41,12 @@ module.exports = {
         ]
       },
 
+      //
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+
       // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,

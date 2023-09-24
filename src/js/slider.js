@@ -1,3 +1,5 @@
+import Swiper from 'swiper'
+
 const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {
   let swiper
 
